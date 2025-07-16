@@ -14,6 +14,7 @@ import OrderStatus from './OrderStatus';
 import DeliveryStatus from './DeliveryStatus';
 import FinalBill from './FinalBill';
 import Address from './Adress';
+import ChangePassword from './ChangePassword';
 function App() {
   return (
     <Router>
@@ -32,6 +33,7 @@ function App() {
           <Route path = "/delivery-status" element = {<DeliveryStatus/>}/>
           <Route path = "final-bill" element = {<FinalBill/>}/>
           <Route path = "/address" element ={<Address/>}/>
+          <Route path = "/change-password" element ={<ChangePassword/>}/>
         </Routes>
       </div>
     </Router>

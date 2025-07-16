@@ -272,7 +272,6 @@ const Customer = () => {
                                     <button onClick={() => handleDropdownNavigation('/customer-cart')}>Your Cart</button>
                                     <button onClick={() => handleDropdownNavigation('/order-status')}>Order Status</button>
                                     <button onClick={() => handleDropdownNavigation('/delivery-status')}>Delivery Status</button>
-                                    <button onClick={() => handleDropdownNavigation('/payment-bill')}>Payment Bill</button>
                                     <button onClick={() => handleDropdownNavigation('/change-password')}>Change Password</button>
                                     <button onClick={handleLogout}>Logout</button>
                                 </div>

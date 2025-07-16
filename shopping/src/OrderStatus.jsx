@@ -76,13 +76,13 @@ const OrderStatus = () => {
                         clearInterval(pollingIntervalRef.current);
                         pollingIntervalRef.current = null;
                     }
-                    return prevStatus; // Maintain the last message
+                    return prevStatus; 
                 }
 
-                deliveryTimerRef.current += 5; // Increment by interval duration (5 seconds)
+                deliveryTimerRef.current += 5; 
 
-                const UPI_DELIVERY_TIME = 20; // seconds for UPI/other
-                const COD_DELIVERY_TIME = 10; // seconds for COD
+                const UPI_DELIVERY_TIME = 20; 
+                const COD_DELIVERY_TIME = 10; 
 
                 const targetDeliveryTime = (currentOrder.paymentMethod === 'cod') ? COD_DELIVERY_TIME : UPI_DELIVERY_TIME;
 
